@@ -6,7 +6,7 @@
 question：怎么找到.exe文件的地址呢？<br>
 先找到exe文件：![image](https://user-images.githubusercontent.com/103570083/164187548-c106dc98-f84e-45db-9bf0-3f8758ca6834.png)<br>
 属性->安全，即可找到
-![image](https://user-images.githubusercontent.com/103570083/164187946-92f0076a-c97a-4461-aa9c-9c92c454cfd8.png)<br
+![image](https://user-images.githubusercontent.com/103570083/164187946-92f0076a-c97a-4461-aa9c-9c92c454cfd8.png)<br>
 
 
 第二步：按照需求修改Timings表格<br>
