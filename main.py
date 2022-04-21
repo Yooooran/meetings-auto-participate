@@ -35,10 +35,10 @@ def enter_meeting(id, ps_word, way):
         os.startfile(r"C:\Users\A\AppData\Roaming\Zoom\bin\Zoom.exe")
         time.sleep(4)
         click("zoom_enter_meeting.png")
-        time.sleep(0.5)
+        time.sleep(2)
         enter_wd(id)
         click("zoom_enter_meeting2.png")
-        time.sleep(1)
+        time.sleep(2)
         enter_wd(ps_word)
 
 
