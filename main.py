@@ -7,11 +7,11 @@ import pyautogui
 
 
 def click(img):
-    """单击加入会议按钮"""
-    enter_mt_btn = pyautogui.locateCenterOnScreen(img)
-    pyautogui.moveTo(enter_mt_btn)
-    pyautogui.click()
-    time.sleep(1)
+    """点击图片中心"""
+    enter_mt_btn = pyautogui.locateCenterOnScreen(img)  # 锁定位置
+    pyautogui.moveTo(enter_mt_btn)  # 移动到这里
+    pyautogui.click()  # 单击一下
+    time.sleep(1)  # 等待1s
 
 
 def enter_wd(msg):
@@ -25,13 +25,13 @@ def enter_meeting(id, ps_word, way):
     if way == 'Tencent':
         # 这里需要替换自己电脑中腾讯会议应用程序的位置
         os.startfile(r"G:\SmallTools\腾讯会议\WeMeet\wemeetapp.exe")
-        time.sleep(4)
+        time.sleep(5)
         click("enter_meeting.png")
         enter_wd(id)
         click("enter_meeting2.png")
         enter_wd(ps_word)
         click("enter.png")
-    if way == 'zoom':
+    if way == 'Zoom':
         os.startfile(r"C:\Users\A\AppData\Roaming\Zoom\bin\Zoom.exe")
         time.sleep(4)
         click("zoom_enter_meeting.png")
@@ -40,6 +40,7 @@ def enter_meeting(id, ps_word, way):
         click("zoom_enter_meeting2.png")
         time.sleep(2)
         enter_wd(ps_word)
+        click("zoom_enter_meeting3.png")
 
 
 df = pd.read_excel(r"timings.xlsx")
